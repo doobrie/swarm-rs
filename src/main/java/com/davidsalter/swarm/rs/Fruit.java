@@ -1,20 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Example JAX_RS application showing how to deploy to WildFly Swarm
  */
 package com.davidsalter.swarm.rs;
 
 import java.io.Serializable;
 
 /**
- *
- * @author David
+ * Class implementation of a fruit
+ * 
+ * @author david@davidsalter.com
  */
 public class Fruit implements Serializable {
 
-    private int id;
-    private String name;
+    private final int id;
+    private final String name;
     
     public Fruit(int id, String name) {
         this.id = id;
