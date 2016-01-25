@@ -12,7 +12,7 @@
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <swarm.version>1.0.0.Alpha5</swarm.version>
+        <swarm.version>1.0.0.Alpha6</swarm.version>
     </properties>
     
     <dependencies>
@@ -24,14 +24,10 @@
         </dependency>
         <dependency>
             <groupId>org.wildfly.swarm</groupId>
-            <artifactId>wildfly-swarm-jaxrs</artifactId>
+            <artifactId>jaxrs</artifactId>
             <version>${swarm.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.wildfly.swarm</groupId>
-            <artifactId>wildfly-swarm-msc</artifactId>
-            <version>${swarm.version}</version>
-        </dependency>
+
     </dependencies>
 
     <build>
@@ -84,6 +80,7 @@
             <plugin>
                 <groupId>org.wildfly.swarm</groupId>
                 <artifactId>wildfly-swarm-plugin</artifactId>
+                <version>${swarm.version}</version>
                 <executions>
                     <execution>
                         <goals>
